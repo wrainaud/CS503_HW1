@@ -4,6 +4,11 @@ public class ShowDog extends Dog {
 	
 	private String breed;
 	
+	public ShowDog(String inFurColor, String inBreed) {
+		super(inFurColor);
+		breed = inBreed;
+	}//ShowDog
+	
 	public String getBreed() {
 		return breed;
 	}//getBreed
@@ -11,5 +16,9 @@ public class ShowDog extends Dog {
 	public void setBreed(String breed) {
 		this.breed = breed;
 	}//setBreed
+	
+	public String toString() {
+		return "Show Dog - " + "Fur Color: " + super.getFurColor() + ". Breed: " + breed + " ";
+	}//toString
 	
 }//ShowDog

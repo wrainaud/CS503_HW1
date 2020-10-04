@@ -4,6 +4,9 @@ public class Fish implements Animal {
 
 	private String color;
 	
+	public Fish () {
+	}//Fish
+	
 	public String getColor() {
 		return color;
 	}//getColor
@@ -21,4 +24,8 @@ public class Fish implements Animal {
 	public void makeSound() {
 		System.out.println("SPLISH! SPLASH! SPLISH! SPLASH!");
 	}//makeSound
+	
+	public String toString() {
+		return "Fish - " + "Color: " + color + "  ";
+	}//toString
 }//Fish
