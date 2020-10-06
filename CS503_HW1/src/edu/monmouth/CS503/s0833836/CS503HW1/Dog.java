@@ -3,10 +3,11 @@ package edu.monmouth.CS503.s0833836.CS503HW1;
 public class Dog implements Animal {
 
 	protected String furColor;
-	public String moveDog = "Move legs";
-	public String makeDogSound = "BARK! BARK! BARK!";
+	protected String moveDog = "Move legs";
+	protected String makeDogSound = "BARK! BARK! BARK!";
 	
-	public Dog () {
+	public Dog (String inFurColor) {
+		furColor = inFurColor;
 	}//Dog
 	
 	public void setFurColor(String furColor) {

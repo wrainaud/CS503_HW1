@@ -5,17 +5,14 @@ public class AnimalList {
 		Animal[] list = new Animal[20];
 		public int counter = 0;
 		
-		public AnimalList() {
-		}//InstructorList
-		
-		public void addDog() {
-			Dog newDog = new Dog();
+		public void addDog(String inFurColor) {
+			Dog newDog = new Dog(inFurColor);
 			list[counter] = newDog;
 			counter++;
 		}//addDog
 	
-		public void addFish() {
-			Fish newFish = new Fish();
+		public void addFish(String inColor) {
+			Fish newFish = new Fish(inColor);
 			list[counter] = newFish;
 			counter++;
 		}//addFish

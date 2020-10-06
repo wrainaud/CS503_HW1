@@ -2,9 +2,10 @@ package edu.monmouth.CS503.s0833836.CS503HW1;
 
 public class Fish implements Animal {
 
-	private String color;
+	public String color;
 	
-	public Fish () {
+	public Fish (String inColor) {
+		color = inColor;
 	}//Fish
 	
 	public String getColor() {
