@@ -35,6 +35,20 @@ public class AnimalTester {
 			System.out.println(list[newCounter].toString());
 		}//for
 	}//printList
+	
+	public void printEvenElementsList() {		
+		for (int newCounter = 0; newCounter < counter; newCounter++) {
+			if(newCounter % 2 == 0) {
+			System.out.println(list[newCounter].toString());
+			}//if
+		}//for
+	}//printList
+	
+	public void printReverseList() {		
+		for (int newCounter = -1; newCounter > counter; newCounter--) {
+			System.out.println(list[newCounter].toString());
+		}//for
+	}//printList
 
 	public static void main(String[] args) {
 		
@@ -70,8 +84,21 @@ public class AnimalTester {
 		test1.addShowDog("Yellow", "Great Dane");
 		test1.addShowDog("Brown", "French Bulldog");
 		test1.addShowDog("Charcoal", "Dobermann");
-
+		
+		System.out.println("");
+		System.out.println("Full List of Animals");
+		System.out.println("");
 		test1.printList();
+		
+		System.out.println("");
+		System.out.println("Every Even Animal in the Array");
+		System.out.println("");
+		test1.printEvenElementsList();
+		
+		System.out.println("");
+		System.out.println("Every Animal in the Array in Reverse Order");
+		System.out.println("");
+		test1.printReverseList();
 
 	}//main
 	
