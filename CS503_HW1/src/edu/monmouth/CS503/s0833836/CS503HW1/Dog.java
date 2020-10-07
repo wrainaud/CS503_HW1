@@ -28,6 +28,7 @@ public class Dog implements Animal {
 		System.out.println(makeDogSound);
 	}//makeSound
 	
+	//@Override
 	public String toString() {
 		return "Dog - " + "Fur Color: " + furColor + "  ";
 	}//toString

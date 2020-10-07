@@ -9,14 +9,17 @@ public class ShowDog extends Dog {
 		breed = inBreed;
 	}//ShowDog
 	
+	//@Override
 	public String getBreed() {
 		return breed;
 	}//getBreed
 	
+	//@Override
 	public void setBreed(String breed) {
 		this.breed = breed;
 	}//setBreed
 	
+	//@Override
 	public String toString() {
 		return "Show Dog - " + "Fur Color: " + super.getFurColor() + ". Breed: " + breed + " ";
 	}//toString

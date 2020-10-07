@@ -28,6 +28,7 @@ public class Fish implements Animal {
 		System.out.println(makeFishSound);
 	}//makeSound
 	
+	//@Override
 	public String toString() {
 		return "Fish - " + "Color: " + color + "  ";
 	}//toString
