@@ -3,6 +3,8 @@ package edu.monmouth.CS503.s0833836.CS503HW1;
 public class Fish implements Animal {
 
 	public String color;
+	protected String moveFish = "Move fins";
+	protected String makeFishSound = "SPLISH! SPLASH! SPLISH! SPLASH!";
 	
 	public Fish (String inColor) {
 		color = inColor;
@@ -18,12 +20,12 @@ public class Fish implements Animal {
 
 	//@Override
 	public void move() {
-		System.out.println("Move fins");
+		System.out.println(moveFish);
 	}//move
 	
 	//@Override
 	public void makeSound() {
-		System.out.println("SPLISH! SPLASH! SPLISH! SPLASH!");
+		System.out.println(makeFishSound);
 	}//makeSound
 	
 	public String toString() {
